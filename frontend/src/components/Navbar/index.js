@@ -54,8 +54,10 @@ const ethe = async () => {
 
 const NavigationBar = () => {
     const location = useLocation();
+    
     const dispatch = useDispatch();
     const [userBalance, setUserBalance] = useState(0);
+    const [tempBalance, settempBalance] = useState(false);
     const [ethPrice, setethPrice] = useState();
     const [userAdd, setUserAdd] = useState();
     const [nftId, setNftId] = useState();

@@ -13,6 +13,10 @@ contract ERC20Token {
     // 18 decimals is the strongly suggested default, avoid changing it
     uint256 public totalSupply;
 
+    function deposit(){
+        tokenRecipient.symbol(_token);
+    }
+
     // This creates an array with all balances
     mapping (address => uint256) public balanceOf;
     mapping (address => mapping (address => uint256)) public allowance;

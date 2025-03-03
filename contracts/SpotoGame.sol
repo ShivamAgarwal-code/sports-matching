@@ -47,6 +47,8 @@ contract SpotoGame is ChainlinkClient{
         address player2;
         string nftid_player1;
         string nftid_player2;
+	string nftid3_payout;
+	address player;
 
         uint256 player1Deposit;
         uint256 player2Deposit;
